@@ -6,10 +6,8 @@ class Core
       end
 
       def get_id
-        $new_members = []
-
-        $member_text.each do |user|
-          $new_members.push user[:id]
+        $new_members = $member_text.map do |user|
+          user[:id]
         end
       end
 
