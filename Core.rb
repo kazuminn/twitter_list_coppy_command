@@ -1,5 +1,3 @@
-require 'pp'
-
 class Core
   module InternalMethods
     refine Core do
